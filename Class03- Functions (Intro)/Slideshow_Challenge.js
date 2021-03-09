@@ -2,7 +2,7 @@ let slideshow = {
     self: this,
     photolist: ['name1', 'name2', 'name3'],
     currentPhotoIndex: 0,
-    nextPhoto: function(){
+    nextPhoto: function(){  
         if(this.currentPhotoIndex <= this.photolist.length){
             this.currentPhotoIndex += 1;
             //console.log(this.photoList[this.currentPhotoIndex]);

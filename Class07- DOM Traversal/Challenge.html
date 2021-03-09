@@ -1,0 +1,34 @@
+<html>
+     <body>
+          <h1 id="main">This is my heading</h1>
+          <article>This is the first article of the webpage</article>
+          <div class="col">
+               <section>
+                    <h2>Section 1</h2>
+               </section>
+               <section class="current">
+                    <h2 class="highlight">Section 2</h2>
+               </section>
+               <section>
+                    <h1>Section 2</h1>
+               </section>
+          </div>
+     <script>
+    //Laziness is your friend...
+        let selectedSection = document.querySelector.bind(document)
+        let qa = document.querySelectorAll.bind(document);
+
+
+        q('header');
+        qa('section');
+        q('section.current');
+        q('section.current').nextElementSibling;
+        q('section.current').previousElementSibling.children[0];
+        q('h2.highlight').parentElement.parentElement;
+
+    let allSections = Array.from(document.querySelectorAll('h2')).map(headElement => {
+    headElement.parentElement
+    });
+     </script>
+     </body>
+</html>
